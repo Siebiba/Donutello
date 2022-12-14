@@ -9,31 +9,42 @@
 html {
     min-height: 100%;
 }
+
 body {
-    background-image: linear-gradient(to bottom,rgba(231, 40, 112, 0.5) ,rgba(97, 209, 214, 0.5 )) , url('../assets/background\ \(1\).png');
+    background-image: linear-gradient(to bottom, rgba(231, 40, 112, 0.5), rgba(97, 209, 214, 0.5)), url('../assets/background\ \(1\).png');
     background-repeat: repeat;
     background-size: 10%;
 }
 
 /* ----------------header / nav ----------------- */
-nav {
+
+
+header {
     background-color: #E72870;
-  
     width: 100%;
     height: 80px;
     position: fixed;
     z-index: 1;
 }
 
-nav a {
-    position: relative;
-    left: 400px;
+nav {
+    background-color: #E72870;
+
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 1;
+    color: snow;
+}
+
+header a {
+
     color: #ffffff;
     text-decoration: none;
     font-family: 'Dosis', sans-serif;
     padding: 10px;
     font-weight: 550;
-    top: 35px;
+    top: 50px;
     height: 44.8px;
     font-size: 19.2px;
     left: 800px;
@@ -46,12 +57,13 @@ nav a:hover {
 .logo img {
     width: 137.66px;
     vertical-align: middle;
-   
+
     top: 20px;
 
 }
+
 .logo {
-   
+
     top: 20px;
     left: 300px;
 }
@@ -66,7 +78,7 @@ nav a:hover {
     right: 0;
     margin: auto;
     width: 300px;
-    height: 100px;
+    height: 200px;
     background-color: #E82870;
     z-index: 1;
 }
@@ -79,34 +91,24 @@ nav a:hover {
     height: 100%;
     margin: auto;
     background-color: #E82870;
-    z-index: 1;
+  
 }
 
 /* ----------------configurator canvas----------------- */
 
-.configuratorCanvas {
-    position: absolute;
+
+
+.loading {
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
     margin: auto;
     width: 100%;
-    height: 100%;
-    background-color: #E82870;
-    z-index: 1;
-}
+    height: 20px;
+    background-color: aqua;
+    text-align: center;
 
-
-.loading {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 100px;
-    height: 100px;
-    background-color: #E82870;
-    z-index: 1;
 }
 
 
@@ -118,55 +120,156 @@ nav a:hover {
     border-width: 0 12px 12px 0;
     display: inline-block;
     padding: 12px;
-  }
-  
-  .right {
+}
+
+.right {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
-  }
+}
 
-  .left {
+.left {
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
-  }
+}
 
-  /* ----------------configurator ITEMS----------------- */
+/* ----------------configurator ITEMS----------------- */
 
-  .topping{
+.topping {
     color: #F7E200;
-  }
+}
 
-  .glaze{
+.glaze {
     color: #F7E200;
-  }
+}
 
-  .dough{
+.dough {
     color: #F7E200;
     margin-bottom: 30px;
-  }
+}
 
-  .btnUploadLogo{
+.btnUploadLogo {
     background-color: #F7E200;
     border-radius: 20px;
     padding: 5px 20px;
-    color :#E82870;
-  }
+    color: #E82870;
+}
 
-  .btnCreate{
+.btnCreate {
     background-color: #F7E200;
     border-radius: 20px;
     padding: 5px 20px;
-    color :#E82870;
-  }
+    color: #E82870;
+}
 
-  .btnShare{
+.btnShare {
     background-color: #F7E200;
     border-radius: 20px;
     padding: 5px 20px;
-    color :#E82870;
-  }
+    color: #E82870;
+}
 
-  .hidden {
+.hidden {
     display: none;
-  }
+}
 
+
+
+.horizontal-scroll {
+    overflow: hidden;
+width: 100%;
+height: 25px;
+    display: flex;
+    justify-content: space-between;
+    background-color: snow;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+}
+
+.horizontal-scroll .btn-scroll {
+    background-color: #6f1b1b;
+    color: black;
+    border: none;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+   z-index: 1;
+   border: 0;
+
+
+
+
+
+
+}
+
+.container {
+   text-align: center;
+}
+
+
+.color-container {
+    display: flex;
+ position: absolute;
+
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding-left: 30px;
+   
+    list-style: none;
+}
+
+.color-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    border: 1px solid #3e3e3e;
+}
+
+.color-circle-glaze {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    border: 1px solid #3e3e3e;
+}
+
+.color-circle-sprinkles {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    border: 1px solid #3e3e3e;
+}
+
+.green {
+    background-color: #00FF00;
+}
+
+.blue {
+    background-color: #0000FF;
+}
+
+.red {
+    background-color: #FF0000;
+}
+
+.yellow {
+    background-color: #FFFF00;
+}
+
+.orange {
+    background-color: #FFA500;
+}
+
+.purple {
+    background-color: #800080;
+}
+
+p{color: white;}
