@@ -16,3 +16,11 @@ const renderer = new THREE.WebGLRenderer({antialias: true});
 renderer.setClearColor("#233143");
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
+
+
+// Make Canvas Responsive
+window.addEventListener('resize', () => {
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+})
