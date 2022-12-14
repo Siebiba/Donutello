@@ -1,0 +1,172 @@
+* {
+    /*everything 0 */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+html {
+    min-height: 100%;
+}
+body {
+    background-image: linear-gradient(to bottom,rgba(231, 40, 112, 0.5) ,rgba(97, 209, 214, 0.5 )) , url('../assets/background\ \(1\).png');
+    background-repeat: repeat;
+    background-size: 10%;
+}
+
+/* ----------------header / nav ----------------- */
+nav {
+    background-color: #E72870;
+  
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 1;
+}
+
+nav a {
+    position: relative;
+    left: 400px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    padding: 10px;
+    font-weight: 550;
+    top: 35px;
+    height: 44.8px;
+    font-size: 19.2px;
+    left: 800px;
+}
+
+nav a:hover {
+    color: #F7E23A;
+}
+
+.logo img {
+    width: 137.66px;
+    vertical-align: middle;
+   
+    top: 20px;
+
+}
+.logo {
+   
+    top: 20px;
+    left: 300px;
+}
+
+/* ----------------placing container----------------- */
+
+/*place configcontainer bottom on sreen */
+.configContainer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 300px;
+    height: 100px;
+    background-color: #E82870;
+    z-index: 1;
+}
+
+/* ----------------configurator----------------- */
+
+.configurator {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: #E82870;
+    z-index: 1;
+}
+
+/* ----------------configurator canvas----------------- */
+
+.configuratorCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-color: #E82870;
+    z-index: 1;
+}
+
+
+.loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    background-color: #E82870;
+    z-index: 1;
+}
+
+
+
+/* ----------------arrows----------------- */
+
+.arrow {
+    border: solid #F7E200;
+    border-width: 0 12px 12px 0;
+    display: inline-block;
+    padding: 12px;
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+
+  /* ----------------configurator ITEMS----------------- */
+
+  .topping{
+    color: #F7E200;
+  }
+
+  .glaze{
+    color: #F7E200;
+  }
+
+  .dough{
+    color: #F7E200;
+    margin-bottom: 30px;
+  }
+
+  .btnUploadLogo{
+    background-color: #F7E200;
+    border-radius: 20px;
+    padding: 5px 20px;
+    color :#E82870;
+  }
+
+  .btnCreate{
+    background-color: #F7E200;
+    border-radius: 20px;
+    padding: 5px 20px;
+    color :#E82870;
+  }
+
+  .btnShare{
+    background-color: #F7E200;
+    border-radius: 20px;
+    padding: 5px 20px;
+    color :#E82870;
+  }
+
+  .hidden {
+    display: none;
+  }
+
