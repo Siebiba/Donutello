@@ -162,19 +162,37 @@ loaderOne.load(
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
 
+
+
 const buttonssprinkles = document.querySelectorAll('.color-circle-sprinkles');
 buttonssprinkles.forEach(buttonsprinkle => {
     buttonsprinkle.addEventListener('click', function () {
         console.log("button clicked");
-        let color = buttonsprinkle.getAttribute("data-color");
-        console.log(color);
+        
+    //dispose cuurnt obj
+    
+    scene.remove(scene.children[5]);
+   
+
+
+
+
+        let model = buttonsprinkle.getAttribute("data-model");
+      
+        console.log(model);
+
+    
+        
+
+        console.log("dispose");
+         
 
 
         //omport donu tmodel from obj file
         const loader = new OBJLoader();
         loader.load(
             // resource URL
-            '/assets/models/Sprinkles.obj',
+            model,
             // called when resource is loaded
             function (object) {
 
