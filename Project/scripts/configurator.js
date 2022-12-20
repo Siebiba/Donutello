@@ -19,7 +19,7 @@ camera.position.z = 5; // <- New code
 const renderer = new THREE.WebGLRenderer({
     antialias: true
 });
-renderer.setClearColor("grey");
+renderer.setClearColor("pink");
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
@@ -178,6 +178,7 @@ buttonssprinkles.forEach(buttonsprinkle => {
 
 
         let model = buttonsprinkle.getAttribute("data-model");
+        let color = buttonsprinkle.getAttribute("data-color");
       
         console.log(model);
 
@@ -199,7 +200,9 @@ buttonssprinkles.forEach(buttonsprinkle => {
                 //add the color from the button when clicking button green
                 object.traverse(function (child) {
                     if (child.isMesh) {
-                        //add texture to the object
+                        //add color to the object
+                        child.material.color.set(color);
+                        
 
                     }
                 });
